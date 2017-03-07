@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {}
+    
+    .container {
+        white-space: nowrap;
+        font-size: 0;
+        vertical-align: top;
+    }
+    
+    .container div {
+        font-size: 14px;
+        vertical-align: top;
+    }
+    
+    .my-style {
+        width: 300px;
+        height: 100px;
+        /*float: left;*/
+        display: inline-block;
+    }
+    
+    p {
+        white-space: nowrap;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="my-style" style="background: red;">123</div>
+        <div class="my-style" style="background: green;">123</div>
+        <div class="my-style" style="background: pink;">
+            <ruby>汉
+                <rt>han</rt>
+            </ruby>
+        </div>
+    </div>
+</body>
+
+</html>

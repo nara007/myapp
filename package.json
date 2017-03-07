@@ -1,0 +1,25 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nara007/image-button-css3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nara007/image-button-css3/issues"
+  },
+  "homepage": "https://github.com/nara007/image-button-css3#readme",
+  "devDependencies": {
+    "bower": "^1.8.0",
+    "jquery.transit": "^0.9.12",
+    "leaflet-dialog": "^1.0.1",
+    "leaflet-modal": "^0.1.3"
+  }
+}

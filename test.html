@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .btn {
+        /* Old browsers */
+        background: rgb(204, 204, 204);
+        /* FF3.6-15 */
+        background: -moz-linear-gradient(top, rgba(204, 204, 204, 1) 0%, rgba(238, 238, 238, 1) 50%, rgba(204, 204, 204, 1) 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: -webkit-linear-gradient(top, rgba(204, 204, 204, 1) 0%, rgba(238, 238, 238, 1) 50%, rgba(204, 204, 204, 1) 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        background: linear-gradient(to bottom, rgba(204, 204, 204, 1) 0%, rgba(238, 238, 238, 1) 50%, rgba(204, 204, 204, 1) 100%);
+        /* IE6-9 */
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', endColorstr='#cccccc', GradientType=0);
+        /*round corner button*/
+        -webkit-border-radius: 9px;
+        -moz-border-radius: 9px;
+        -o-border-radius: 9px;
+        border-radius: 9px;
+        padding: 10px 10px 10px 10px;
+        display: inline-block;
+        cursor: pointer;
+        /*disable text selection when double click*/
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        -o-user-select: none;
+        border: 1px solid lightgrey;
+        position: relative;
+    }
+    
+    .btn:active {
+        /* Old browsers */
+        background: rgb(204, 204, 204);
+        /* FF3.6-15 */
+        background: -moz-linear-gradient(top, rgba(204, 204, 204, 1) 0%, rgba(204, 204, 204, 1) 50%, rgba(204, 204, 204, 1) 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: -webkit-linear-gradient(top, rgba(204, 204, 204, 1) 0%, rgba(204, 204, 204, 1) 50%, rgba(204, 204, 204, 1) 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        background: linear-gradient(to bottom, rgba(204, 204, 204, 1) 0%, rgba(204, 204, 204, 1) 50%, rgba(204, 204, 204, 1) 100%);
+        /* IE6-9 */
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', endColorstr='#cccccc', GradientType=0);
+        padding-top: 11.4px;
+        padding-bottom: 8.6px;
+        border: 1.5px solid grey;
+    }
+    
+    .btn > a {
+        margin-left: 6px;
+        text-decoration: none;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 15px;
+    }
+    
+    .btn > a:link,
+    .btn > a:visited,
+    .btn > a:hover {
+        color: #000;
+    }
+    
+    .btn > img {
+        width: 20px;
+        height: 20px;
+        vertical-align: middle;
+    }
+    </style>
+</head>
+
+<body>
+    <div style="width: 200px;height: 100px; background:red; margin-bottom: 20px;"></div>
+    <div class="btn">
+        <img src="assets/img/Settings-48.png"><a href="#">settings</a>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+{
+  "name": "demo",
+  "description": "demo of web app",
+  "main": "",
+  "authors": [
+    "Ye Song"
+  ],
+  "license": "MIT",
+  "homepage": ""
+}

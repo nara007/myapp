@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        padding-top: 100px;
+        padding-left: 100px;
+    }
+    
+    .dropdown-btn-wrapper {
+        display: inline-block;
+    }
+    
+    .dropdown-btn {
+        /*width: 100px;*/
+        /*height: 100px;*/
+        /*position: relative;*/
+        padding: 5px;
+        /*background-color: darkgrey;*/
+        -webkit-border-radius: 7px;
+        -moz-border-radius: 7px;
+        border-radius: 7px;
+        display: inline-block;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#dddddd+0,eeeeee+50,dddddd+100;Grey+3D+%234 */
+        background: rgb(221, 221, 221);
+        /* Old browsers */
+        background: -moz-linear-gradient(top, rgba(221, 221, 221, 1) 0%, rgba(238, 238, 238, 1) 50%, rgba(221, 221, 221, 1) 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(221, 221, 221, 1) 0%, rgba(238, 238, 238, 1) 50%, rgba(221, 221, 221, 1) 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(221, 221, 221, 1) 0%, rgba(238, 238, 238, 1) 50%, rgba(221, 221, 221, 1) 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#dddddd', GradientType=0);
+        /* IE6-9 */
+        border: 2px solid lightgrey;
+        cursor: pointer;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        -o-user-select: none;
+    }
+    /*    .dropdown-btn:active {
+        background: rgb(221, 221, 221);
+        background: -moz-linear-gradient(top, rgba(221, 221, 221, 1) 0%, rgba(221, 221, 221, 1) 100%);
+        background: -webkit-linear-gradient(top, rgba(221, 221, 221, 1) 0%, rgba(221, 221, 221, 1) 100%);
+        background: linear-gradient(to bottom, rgba(221, 221, 221, 1) 0%, rgba(221, 221, 221, 1) 100%);
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#dddddd', GradientType=0);
+        border: 2px solid darkgrey;
+        padding-top: 6.5px;
+        padding-bottom: 3.5px;
+    }*/
+    
+    .actived {
+        background: rgb(221, 221, 221);
+        background: -moz-linear-gradient(top, rgba(221, 221, 221, 1) 0%, rgba(221, 221, 221, 1) 100%);
+        background: -webkit-linear-gradient(top, rgba(221, 221, 221, 1) 0%, rgba(221, 221, 221, 1) 100%);
+        background: linear-gradient(to bottom, rgba(221, 221, 221, 1) 0%, rgba(221, 221, 221, 1) 100%);
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#dddddd', GradientType=0);
+        border: 2px solid darkgrey;
+        padding-top: 6.5px;
+        padding-bottom: 3.5px;
+    }
+    
+    .dropdown-btn img {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .dropdown-btn-wrapper ul {
+        margin-top: 1px;
+        list-style: none;
+        background: rgb(221, 221, 221);
+        background: -moz-linear-gradient(top, rgba(221, 221, 221, 1) 0%, rgba(221, 221, 221, 1) 100%);
+        background: -webkit-linear-gradient(top, rgba(221, 221, 221, 1) 0%, rgba(221, 221, 221, 1) 100%);
+        background: linear-gradient(to bottom, rgba(221, 221, 221, 1) 0%, rgba(221, 221, 221, 1) 100%);
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#dddddd', GradientType=0);
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        padding: 5px;
+        display: none;
+    }
+    
+    .dropdown-btn-wrapper ul li {
+        border: 1px solid transparent;
+        padding: 5px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+    }
+    
+    .dropdown-btn-wrapper ul li:hover {
+        /*background-color: red;*/
+        border: 1px solid lightgrey;
+        cursor: pointer;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#dddddd+0,eeeeee+50,dddddd+100;Grey+3D+%234 */
+        background: rgb(221, 221, 221);
+        /* Old browsers */
+        background: -moz-linear-gradient(top, rgba(221, 221, 221, 1) 0%, rgba(238, 238, 238, 1) 50%, rgba(221, 221, 221, 1) 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(221, 221, 221, 1) 0%, rgba(238, 238, 238, 1) 50%, rgba(221, 221, 221, 1) 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(221, 221, 221, 1) 0%, rgba(238, 238, 238, 1) 50%, rgba(221, 221, 221, 1) 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#dddddd', GradientType=0);
+    }
+    
+    .component-wrapper {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="dropdown-btn-wrapper">
+        <div class="dropdown-btn">
+            <div class="component-wrapper"><img src="./assets/img/earth-48.png"></div>
+            <div class="component-wrapper"><span>123</span></div>
+            <div class="component-wrapper"><img src="./assets/img/sort-down-48.png"></div>
+        </div>
+        <ul>
+            <li>123123456789jjwh</li>
+            <li>456</li>
+            <li>789</li>
+        </ul>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript">
+    $(".dropdown-btn").on('click', function() {
+        $(this).addClass('actived');
+        $(this).next().css('display', 'block');
+    });
+
+    $(".dropdown-btn-wrapper ul li").on('click', function() {
+        var ul = $(this).parent();
+        ul.css('display', 'none');
+        ul.prev().removeClass('actived');
+        var span = ul.prev().find('span');
+        span.html($(this).html());
+    });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css" media="screen">
+    .outer{
+    	vertical-align: top;
+    }
+    .outer > * {
+        display: inline-block;
+        background-color: lightgreen;
+        /*vertical-align: bottom;*/
+    }
+    
+    .one {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .two {
+        width: 80px;
+        height: 80px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="outer">
+        <div class="one">hello</div>
+        <div class="two">Some text that will wrap</div>
+    </div>
+</body>
+
+</html>

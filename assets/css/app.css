@@ -1,0 +1,241 @@
+/*public style*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body,
+#container {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    -moz-user-select: none;
+}
+
+#container {
+    /*background: pink;*/
+    position: relative;
+}
+
+#sidebar-wrapper {
+    float: left;
+    /*display: block;*/
+    width: 250px;
+    height: 100%;
+    /*background: lightgrey;*/
+    overflow: scroll;
+}
+
+#content-wrapper {
+    width: auto;
+    height: 100%;
+    margin-left: 253px;
+    /*background: yellow;*/
+    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);*/
+}
+
+#separator {
+    float: left;
+    width: 3px;
+    height: 100%;
+    cursor: ew-resize;
+    background-color: black;
+}
+
+#toolbar-wrapper {
+    height: 100px;
+    /*background: green;*/
+}
+
+#map-wrapper {}
+
+#map {
+    /*height: 200px;*/
+    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);*/
+    -webkit-user-drag: none;
+    -moz-user-drag: none;
+    user-drag: none;
+}
+
+.box-shadow {
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#tabs {
+    height: 40%;
+}
+
+#tabs li {
+    height: 100%;
+}
+
+#tab-contents {
+    height: 60%;
+}
+
+.nav {
+    /*background-color: #000 !important;*/
+}
+
+.nav>li>a {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000', GradientType=0);
+    /* IE6-9 */
+    color: #fff;
+}
+
+#toolbar-set-one,
+#toolbar-set-two,
+#toolbar-set-three {
+    height: 100%;
+    /*background: lightgrey;*/
+}
+
+.toolbar-container {
+    /*background: pink;*/
+    height: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+}
+
+.icon-button {
+    /*background: yellow;*/
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+}
+
+.clearfix:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+
+/*btn*/
+
+.my-btn {
+    background-color: #3bb3e0;
+    padding: 10px;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+    color: #fff;
+    border: solid 1px #186f8f;
+    background-image: linear-gradient(bottom, rgb(44, 160, 202) 0%, rgb(62, 184, 229) 100%);
+    background-image: -o-linear-gradient(bottom, rgb(44, 160, 202) 0%, rgb(62, 184, 229) 100%);
+    background-image: -moz-linear-gradient(bottom, rgb(44, 160, 202) 0%, rgb(62, 184, 229) 100%);
+    background-image: -webkit-linear-gradient(bottom, rgb(44, 160, 202) 0%, rgb(62, 184, 229) 100%);
+    background-image: -ms-linear-gradient(bottom, rgb(44, 160, 202) 0%, rgb(62, 184, 229) 100%);
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgb(44, 160, 202)), color-stop(1, rgb(62, 184, 229)));
+    -webkit-box-shadow: inset 0px 1px 0px #7fd2f1, 0px 1px 0px #fff;
+    -moz-box-shadow: inset 0px 1px 0px #7fd2f1, 0px 1px 0px #fff;
+    box-shadow: inset 0px 1px 0px #7fd2f1, 0px 1px 0px #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+}
+
+
+/*.btn_demo1::before {
+    background-color: #ccd0d5;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 8px;
+    left: -8px;
+    top: -8px;
+    z-index: -1;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0px 1px 1px #909193, 0px 1px 0px #fff;
+    -moz-box-shadow: inset 0px 1px 1px #909193, 0px 1px 0px #fff;
+    -o-box-shadow: inset 0px 1px 1px #909193, 0px 1px 0px #fff;
+    box-shadow: inset 0px 1px 1px #909193, 0px 1px 0px #fff;
+}*/
+
+.btn_demo1:active {
+    padding-bottom: 9px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 11px;
+    top: 1px;
+    background-image: linear-gradient(bottom, rgb(62, 184, 229) 0%, rgb(44, 160, 202) 100%);
+    background-image: -o-linear-gradient(bottom, rgb(62, 184, 229) 0%, rgb(44, 160, 202) 100%);
+    background-image: -moz-linear-gradient(bottom, rgb(62, 184, 229) 0%, rgb(44, 160, 202) 100%);
+    background-image: -webkit-linear-gradient(bottom, rgb(62, 184, 229) 0%, rgb(44, 160, 202) 100%);
+    background-image: -ms-linear-gradient(bottom, rgb(62, 184, 229) 0%, rgb(44, 160, 202) 100%);
+    background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, rgb(62, 184, 229)), color-stop(1, rgb(44, 160, 202)));
+}
+
+#hidden-button {
+    display: inline-block;
+    float: right;
+    // width: 30px;
+    // height: 30px;
+    // background-color: green;
+}
+
+
+/*.tab-content {
+    background-color: yellow;
+    color: yellow;
+    padding: 5px
+}*/
+
+.state-indicator {
+    position: absolute;
+    top: -999em;
+    left: -999em;
+}
+
+.state-indicator::before {
+    content: 'desktop';
+}
+
+
+/* 小屏幕桌面 */
+
+@media all and (max-width: 1200px) {
+    .state-indicator::before {
+        content: 'small-desktop';
+    }
+}
+
+
+/* 平板 */
+
+@media all and (max-width: 1024px) {
+    .state-indicator::before {
+        content: 'tablet';
+    }
+}
+
+
+/* 手机 */
+
+@media all and (max-width: 768px) {
+    .state-indicator::before {
+        content: 'mobile';
+    }
+}
